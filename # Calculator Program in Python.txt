@@ -1,0 +1,46 @@
+# Calculator Program in Python
+
+# Addition Function
+def add(num1, num2):
+    return num1 + num2
+
+# Subtraction Function
+def sub(num1, num2):
+    return num1 - num2
+
+# Multiplication Function
+def mul(num1, num2):
+    return num1 * num2
+
+# Division Function
+def div(num1, num2):
+    return num1 / num2
+
+print("Select the operation you want to perform: ")
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+
+# Taking User Input for Choice
+choice = input("Enter your choice (1/2/3/4): ")
+
+# Taking User Input for Numbers
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+# Condition for Choice Selected
+if choice == '1':
+    print(num1, "+", num2, "=", add(num1, num2))
+
+elif choice == '2':
+    print(num1, "-", num2, "=", sub(num1, num2))
+
+elif choice == '3':
+    print(num1, "*", num2, "=", mul(num1, num2))
+
+elif choice == '4':
+    print(num1, "/", num2, "=", div(num1, num2))
+
+else:
+    print("Invalid input")
